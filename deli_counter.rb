@@ -12,13 +12,15 @@ def line(deli)
 end
 
 def take_a_number(deli, name)
-  if 
-  line = ""
-  deli.each_with_index do |name, index|
-    line = line + "Welcome, #{name}. You are number #{index + 1} in line."
+  if deli.length == 0 
+    deli << name
+  else
+    deli << name
+    line = ""
+    deli.each_with_index do |name, index|
+      line = line + "Welcome, #{name}. You are number #{index + 1} in line."
+    end
   end
-  
-  
 end
 
 def now_serving(deli)
