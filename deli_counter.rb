@@ -15,11 +15,11 @@ def take_a_number(deli, name)
   deli << name
   if deli.length == 0 
     puts "Welcome, #{name}. You are number #{deli.index(name) + 1} in line."
-  else
-    line = ""
-    deli.each_with_index do |name, index|
-      line = line + "Welcome, #{name}. You are number #{index + 1} in line."
-    end
+  # else
+  #   line = ""
+  #   deli.each_with_index do |name, index|
+  #     line = line + "Welcome, #{name}. You are number #{index + 1} in line."
+  #   end
   end
 end
 
