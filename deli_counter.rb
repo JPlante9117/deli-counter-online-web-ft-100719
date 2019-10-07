@@ -12,8 +12,7 @@ def line(deli)
 end
 
 def take_a_number(deli, name)
-  deli << name
-  
+  if 
   line = ""
   deli.each_with_index do |name, index|
     line = line + "Welcome, #{name}. You are number #{index + 1} in line."
