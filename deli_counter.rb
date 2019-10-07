@@ -12,11 +12,10 @@ def line(deli)
 end
 
 def take_a_number(deli, name)
+  deli << name
   if deli.length == 0 
-    deli << name
     puts "Welcome, #{name}. You are number #{deli.index(name) + 1} in line."
   else
-    deli << name
     line = ""
     deli.each_with_index do |name, index|
       line = line + "Welcome, #{name}. You are number #{index + 1} in line."
